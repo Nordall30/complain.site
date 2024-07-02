@@ -45,6 +45,9 @@ function togglePassword() {
 }
 
 window.onload = () => {
-  document.getElementById('loginButton').addEventListener('click', login);
+  document.getElementById('loginButton').addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent the form from submitting in the traditional way
+    login();
+  });
   document.getElementById('togglePassword').addEventListener('click', togglePassword);
 };
