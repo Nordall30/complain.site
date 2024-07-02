@@ -7,7 +7,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.index-container {
+.login-container {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -16,11 +16,11 @@ body {
   width: 300px;
 }
 
-.index-container h2 {
+.login-container h2 {
   margin-bottom: 20px;
 }
 
-.index-container input {
+.login-container input {
   width: calc(100% - 50px);
   padding: 10px;
   margin: 10px 0;
@@ -54,11 +54,11 @@ body {
 
 .button-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .button-container button {
-  width: 48%;
+  width: 100%;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -71,7 +71,6 @@ body {
   background-color: #0056b3;
 }
 
-.button-container a {
-  width: 48%;
-  text-decoration: none;
+p {
+  margin-top: 20px;
 }
