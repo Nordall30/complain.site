@@ -73,7 +73,7 @@ body {
   background-color: #0056b3;
 }
 
-/* Navbar and dropdown styles */
+/* Navbar styling */
 header {
   background-color: #333;
   padding: 10px 0;
@@ -103,6 +103,7 @@ nav ul li a:hover {
   background-color: #555;
 }
 
+/* Dropdown menu styling */
 .dropdown {
   position: relative;
 }
