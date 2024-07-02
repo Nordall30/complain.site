@@ -1,52 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="navbar">
-    <div class="dropdown">
-      <button class="dropbtn">Home</button>
-      <div class="dropdown-content">
-        <!-- Add content here -->
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">FAQ</button>
-      <div class="dropdown-content">
-        <!-- Add content here -->
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">Registrar</button>
-      <div class="dropdown-content">
-        <!-- Add content here -->
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">Accounting</button>
-      <div class="dropdown-content">
-        <!-- Add content here -->
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">Others</button>
-      <div class="dropdown-content">
-        <!-- Add content here -->
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">About Us</button>
-      <div class="dropdown-content">
-        <!-- Add content here -->
-      </div>
-    </div>
-  </div>
-  <div class="main-content">
-    <h1>Welcome to the Dashboard</h1>
-    <p>This is your dashboard page. Customize it as needed.</p>
-  </div>
-  <script type="module" src="dashboard.js"></script>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a href="#">FAQ &#9662;</a>
+          <div class="dropdown-content">
+            <!-- Dropdown items here -->
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Registrar &#9662;</a>
+          <div class="dropdown-content">
+            <!-- Dropdown items here -->
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Accounting &#9662;</a>
+          <div class="dropdown-content">
+            <!-- Dropdown items here -->
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Others &#9662;</a>
+          <div class="dropdown-content">
+            <!-- Dropdown items here -->
+          </div>
+        </li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <!-- Main content of your dashboard goes here -->
+    <h1>Welcome to Dashboard</h1>
+    <p>This is the main content area.</p>
+  </main>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
