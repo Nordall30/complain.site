@@ -7,7 +7,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.login-container {
+.index-container {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -16,11 +16,11 @@ body {
   width: 300px;
 }
 
-.login-container h2 {
+.index-container h2 {
   margin-bottom: 20px;
 }
 
-.login-container input {
+.index-container input {
   width: calc(100% - 50px);
   padding: 10px;
   margin: 10px 0;
