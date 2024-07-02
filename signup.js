@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-auth.js";
+import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-auth.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -16,20 +16,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 
-// Login function
-async function login() {
-  const email = document.getElementById('email').value;
-  const password = document.getElementById('password').value;
-  try {
-    const userCredential = await signInWithEmailAndPassword(auth, email, password);
-    console.log('User logged in:', userCredential.user);
-    alert('Login successful!');
-  } catch (error) {
-    console.error('Error logging in:', error);
-    alert('Error logging in: ' + error.message);
-  }
-}
-
 // Signup function
 async function signup() {
   const email = document.getElementById('email').value;
@@ -44,7 +30,21 @@ async function signup() {
   }
 }
 
+// Show/hide password function
+function togglePassword() {
+  const passwordField = document.getElementById('password');
+  const toggleButton = document.getElementById('togglePassword');
+  if (passwordField.type === 'password') {
+    passwordField.type = 'text';
+    toggleButton.textContent = 'Hide';
+  } else {
+    passwordField.type = 'password';
+    toggleButton.textContent = 'Show';
+  }
+}
+
 window.onload = () => {
-  document.getElementById('loginButton').addEventListener('click', login);
   document.getElementById('signupButton').addEventListener('click', signup);
+  document.getElementById('togglePassword').addEventListener('click', togglePassword);
 };
+
