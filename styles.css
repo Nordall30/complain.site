@@ -1,76 +1,63 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f0f2f5;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
 }
 
-.login-container {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 300px;
+.navbar {
+  overflow: hidden;
+  background-color: #333;
 }
 
-.login-container h2 {
-  margin-bottom: 20px;
+.navbar .dropdown {
+  float: left;
+  overflow: hidden;
 }
 
-.login-container input {
-  width: calc(100% - 50px);
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-.password-container {
-  position: relative;
-}
-
-.password-container input {
-  width: calc(100% - 40px);
-  padding-right: 40px;
-}
-
-.password-container button {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
+.navbar .dropdown .dropbtn {
+  font-size: 16px;
   border: none;
-  cursor: pointer;
-  color: #007bff;
-}
-
-.password-container button:hover {
-  color: #0056b3;
-}
-
-.button-container {
-  display: flex;
-  justify-content: center;
-}
-
-.button-container button {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #007bff;
+  outline: none;
   color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
   cursor: pointer;
 }
 
-.button-container button:hover {
-  background-color: #0056b3;
+.navbar .dropdown:hover .dropbtn {
+  background-color: #575757;
 }
 
-p {
-  margin-top: 20px;
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.navbar .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.navbar .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.main-content {
+  padding: 20px;
+  margin-top: 30px;
 }
