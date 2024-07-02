@@ -24,6 +24,7 @@ async function login() {
     const userCredential = await signInWithEmailAndPassword(auth, email, password);
     console.log('User logged in:', userCredential.user);
     alert('Login successful!');
+    window.location.href = 'dashboard.html'; // Redirect to dashboard.html after successful login
   } catch (error) {
     console.error('Error logging in:', error);
     alert('Error logging in: ' + error.message);
