@@ -21,11 +21,35 @@ body {
 }
 
 .login-container input {
-  width: 100%;
+  width: calc(100% - 50px);
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #ddd;
   border-radius: 5px;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  width: calc(100% - 40px);
+  padding-right: 40px;
+}
+
+.password-container button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.password-container button:hover {
+  color: #0056b3;
 }
 
 .button-container {
@@ -45,4 +69,9 @@ body {
 
 .button-container button:hover {
   background-color: #0056b3;
+}
+
+.button-container a {
+  width: 48%;
+  text-decoration: none;
 }
