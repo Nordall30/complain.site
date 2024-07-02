@@ -10,7 +10,7 @@ body {
   margin: 0;
 }
 
-.login-container {
+.form-container {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -19,7 +19,7 @@ body {
   width: 300px;
 }
 
-.login-container h2 {
+.form-container h2 {
   margin-bottom: 20px;
 }
 
